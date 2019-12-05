@@ -10,6 +10,7 @@ const Logs = () => {
     getLogs();
     // eslint-disable-next-line
   }, []);
+
   const getLogs = async () => {
     setLoading(true);
     const res = await fetch("/logs");
